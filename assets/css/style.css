@@ -1,0 +1,23 @@
+body {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: block;
+  text-align: center;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* mobile-sm */
+/* mobile-md */
+/* mobile-lg */
+/* tablet */
+/* desktop-sm */
+/* desktop-md */
+/* wide-screen-sm */
+/* wide-screen-md */
+/* wide-screen-lg */
