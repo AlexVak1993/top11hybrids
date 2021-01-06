@@ -50,4 +50,12 @@ img {
     margin: 0;
     transform: skew(20deg);
   }
+
+  &:hover {
+    background: $bg-gradient;
+
+    p {
+      color: $color-accent;
+    }
+  }
 }

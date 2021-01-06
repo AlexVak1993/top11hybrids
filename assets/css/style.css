@@ -55,6 +55,15 @@ img {
           transform: skew(20deg);
 }
 
+.main-cta:hover {
+  background: -o-linear-gradient(0.14deg, #041423 12.38%, #365961 90.38%);
+  background: linear-gradient(89.86deg, #041423 12.38%, #365961 90.38%);
+}
+
+.main-cta:hover p {
+  color: #00F0FF;
+}
+
 .hero {
   display: none;
   margin-bottom: 400px;
@@ -400,16 +409,18 @@ main .lr-bg {
 .brick__overlay {
   background-color: #00F0FF;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: 100% 0;
 }
 
 .vw .brick__overlay {
   background-image: url(../img/golf/bg.png);
+  background-position: 50% 0;
 }
 
 .jazz .brick__overlay {
   background-image: url(../img/jazz/bg.png);
+  background-position: 70% 0;
 }
 
 .a3 .brick__overlay {
@@ -427,6 +438,7 @@ main .lr-bg {
 
 .p3008 .brick__overlay {
   background-image: url(../img/p3008/bg.png);
+  background-position: 50% 0;
 }
 
 .c5 .brick__overlay {
@@ -442,6 +454,7 @@ main .lr-bg {
 .crv .brick__overlay {
   background-image: url(../img/crv/bg.png);
   background-size: cover;
+  background-position: 70% 0;
 }
 
 .ds .brick__overlay {
@@ -564,6 +577,15 @@ main .lr-bg {
   main .lr-bg {
     top: 8200px;
   }
+  .vw .brick__overlay {
+    background-position: 80% 0;
+  }
+  .p3008 .brick__overlay {
+    background-position: 100% 0;
+  }
+  .crv .brick__overlay {
+    background-position: 100% 0;
+  }
 }
 
 @media (min-width: 992px) {
@@ -608,6 +630,9 @@ main .lr-bg {
   .brick__images .images__item {
     margin-right: 30px;
   }
+  .jazz .brick__overlay {
+    background-position: 70% 70%;
+  }
   .footer__caption {
     width: 790px;
     -webkit-transform: skew(-20deg);
@@ -638,5 +663,13 @@ main .lr-bg {
         -ms-flex: 0 0 calc(46% - 60px);
             flex: 0 0 calc(46% - 60px);
     padding: 30px;
+  }
+  .vw .brick__overlay {
+    background-position: 100% 0;
+    background-size: contain;
+  }
+  .jazz .brick__overlay {
+    background-position: 100% 0;
+    background-size: contain;
   }
 }

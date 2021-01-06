@@ -132,7 +132,7 @@ main {
   &__overlay {
     background-color: $color-accent;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: 100% 0;
   }
 }
@@ -140,12 +140,29 @@ main {
 .vw {
   .brick__overlay {
     background-image: url(../img/golf/bg.png);
+    background-position: 50% 0;
+
+    @include tablet {
+      background-position: 80% 0;
+    }
+    @include wide-screen-sm {
+      background-position: 100% 0;
+      background-size: contain;
+    }
   }
 }
 
 .jazz {
   .brick__overlay {
     background-image: url(../img/jazz/bg.png);
+    background-position: 70% 0;
+    @include desktop-sm {
+      background-position: 70% 70%;
+    }
+    @include wide-screen-sm {
+      background-position: 100% 0;
+      background-size: contain;
+    }
   }
 }
 
@@ -171,6 +188,11 @@ main {
 .p3008 {
   .brick__overlay {
     background-image: url(../img/p3008/bg.png);
+    background-position: 50% 0;
+
+    @include tablet {
+      background-position: 100% 0;
+    }
   }
 }
 
@@ -192,6 +214,11 @@ main {
   .brick__overlay {
     background-image: url(../img/crv/bg.png);
     background-size: cover;
+    background-position: 70% 0;
+
+    @include tablet {
+      background-position: 100% 0;
+    }
   }
 }
 
