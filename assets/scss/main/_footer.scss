@@ -1,0 +1,29 @@
+.footer {
+  &__caption {
+    width: 790px;
+    margin: 0 auto 30px auto;
+    padding: 35px 70px;
+    border: 2px solid white;
+    transform: skew(-20deg);
+    background-color: #365961;
+
+    p {
+      margin: 0;
+      transform: skew(20deg);
+      font-size: 1.125rem;
+      line-height: 1.5;
+      font-weight: 500;
+      color: $text-secondary;
+      text-align: center;
+    }
+  }
+
+  &__note {
+    padding-bottom: 30px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+  }
+}

@@ -1,17 +1,3 @@
-body {
-  position: relative;
-  top: 0;
-  right: 0;
-  left: 0.5;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  display: block;
-  text-align: center;
-  text-align: center;
-  background-color: #f1f1f1;
-}
-
 /* mobile-sm */
 /* mobile-md */
 /* mobile-lg */
@@ -21,3 +7,472 @@ body {
 /* wide-screen-sm */
 /* wide-screen-md */
 /* wide-screen-lg */
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #f1f1f1;
+  color: #4d4d4d;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(25%, rgba(255, 255, 255, 0)), color-stop(45.31%, #ffffff), color-stop(72.92%, rgba(255, 255, 255, 0)), color-stop(95.83%, #ffffff)), #c4c4c4;
+  background: -o-linear-gradient(top, #ffffff 0%, rgba(255, 255, 255, 0) 25%, #ffffff 45.31%, rgba(255, 255, 255, 0) 72.92%, #ffffff 95.83%), #c4c4c4;
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 25%, #ffffff 45.31%, rgba(255, 255, 255, 0) 72.92%, #ffffff 95.83%), #c4c4c4;
+}
+
+img {
+  display: block;
+  width: auto;
+  min-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.main-cta {
+  padding: 15px 45px;
+  border: 2px solid white;
+  font-size: 0.8125rem;
+  font-family: "Orbitron", sans-serif;
+  -webkit-transform: skew(-20deg);
+      -ms-transform: skew(-20deg);
+          transform: skew(-20deg);
+  text-decoration: none;
+  background-color: #365961;
+  color: #ffffff;
+}
+
+.main-cta p {
+  margin: 0;
+  -webkit-transform: skew(20deg);
+      -ms-transform: skew(20deg);
+          transform: skew(20deg);
+}
+
+.hero {
+  margin-bottom: 400px;
+  width: 100%;
+  height: 720px;
+  background-image: url(../img/hero/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 23%;
+  left: 65%;
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
+          clip-path: polygon(100% 0, 0 50%, 100% 100%);
+  z-index: 1;
+  background: -o-linear-gradient(0.14deg, #041423 12.38%, #365961 90.38%);
+  background: linear-gradient(89.86deg, #041423 12.38%, #365961 90.38%);
+}
+
+.hero__item {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__item--top {
+  top: 8%;
+  right: 5%;
+  -webkit-clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%);
+          clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%);
+  z-index: 2;
+}
+
+.hero__item--mid {
+  top: 25%;
+  right: 22%;
+  -webkit-clip-path: polygon(100% 20%, 100% 100%, 0 80%, 0 0);
+          clip-path: polygon(100% 20%, 100% 100%, 0 80%, 0 0);
+  z-index: 3;
+}
+
+.hero__item--bot {
+  top: 40%;
+  right: 5%;
+  -webkit-clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%);
+          clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%);
+  z-index: 2;
+}
+
+.intro {
+  width: 790px;
+  margin: 0 auto 60px auto;
+  padding-top: 75px;
+  position: relative;
+}
+
+.intro p {
+  margin-bottom: 20px;
+  margin-top: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.625;
+  color: #B9C0C4;
+}
+
+.intro p:first-of-type {
+  color: #00F0FF;
+  font-weight: 500;
+}
+
+.intro p:last-of-type {
+  margin-bottom: 0;
+}
+
+.brick {
+  height: 660px;
+  padding: 50px 50px 0 50px;
+  margin-bottom: 80px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.brick__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 45%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 45%);
+}
+
+.brick__description {
+  position: relative;
+  margin-top: -10px;
+  margin-left: 10px;
+  z-index: 2;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 47%;
+          flex: 0 0 47%;
+}
+
+.brick__description h1, .brick__description h2 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.brick__description h2 {
+  font-size: 1.5rem;
+}
+
+.brick__description h1 {
+  margin-bottom: 30px;
+  font-size: 3rem;
+}
+
+.brick__description p {
+  line-height: 1.25;
+}
+
+.brick__description a {
+  position: absolute;
+  bottom: 15px;
+}
+
+.brick__stats {
+  margin-top: 15px;
+  margin-left: auto;
+  max-height: calc(240px - 60px);
+  z-index: 2;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(46% - 60px);
+          flex: 0 0 calc(46% - 60px);
+  padding: 30px;
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.brick__stats table {
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+}
+
+.brick__stats table tr td {
+  font-weight: 400;
+  line-height: 2.5;
+}
+
+.brick__stats table tr td:first-of-type {
+  font-family: "Orbitron", sans-serif;
+  color: #00F0FF;
+}
+
+.brick__images {
+  margin-top: auto;
+  margin-bottom: -40px;
+  z-index: 2;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.brick__images .images__item {
+  margin-right: 30px;
+}
+
+.brick__images .images__item:nth-of-type(1) {
+  -webkit-clip-path: polygon(100% 25%, 100% 100%, 0 75%, 0 0);
+          clip-path: polygon(100% 25%, 100% 100%, 0 75%, 0 0);
+}
+
+.brick__images .images__item:nth-of-type(2) {
+  -webkit-clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 25%);
+          clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 25%);
+}
+
+.brick__images .images__item:nth-of-type(3) {
+  -webkit-clip-path: polygon(100% 25%, 100% 100%, 0 75%, 0 0);
+          clip-path: polygon(100% 25%, 100% 100%, 0 75%, 0 0);
+}
+
+.brick__images .images__item:nth-of-type(4) {
+  -webkit-clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 25%);
+          clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 25%);
+}
+
+main {
+  position: relative;
+  overflow: hidden;
+}
+
+main .triangle-bg {
+  position: absolute;
+  width: 100%;
+  height: 1000px;
+  background: -o-linear-gradient(0.14deg, #041423 12.38%, #365961 90.38%);
+  background: linear-gradient(89.86deg, #041423 12.38%, #365961 90.38%);
+}
+
+main .triangle-bg::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+main .intro-bg {
+  top: 0;
+  left: 0;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 100%);
+}
+
+main .intro-bg::after {
+  bottom: 0;
+  left: 0;
+  height: 500px;
+  width: 50%;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
+          clip-path: polygon(0 0, 0% 100%, 100% 50%);
+}
+
+main .jazz-bg {
+  top: 1150px;
+  left: -40%;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
+          clip-path: polygon(0 0, 0% 100%, 100% 50%);
+}
+
+main .a3-bg {
+  top: 2050px;
+  right: 0;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 50%);
+          clip-path: polygon(100% 0, 100% 100%, 0 50%);
+}
+
+main .a3-bg::after {
+  top: 0;
+  right: 0;
+  width: 36%;
+  height: 360px;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 50%);
+          clip-path: polygon(100% 0, 100% 100%, 0 50%);
+}
+
+main .passat-bg {
+  top: 3520px;
+  left: -40%;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
+          clip-path: polygon(0 0, 0% 100%, 100% 50%);
+}
+
+main .p3008-bg {
+  top: 4200px;
+  right: -40%;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 50%);
+          clip-path: polygon(100% 0, 100% 100%, 0 50%);
+}
+
+main .c5-bg {
+  top: 5050px;
+  left: -60%;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
+          clip-path: polygon(0 0, 0% 100%, 100% 50%);
+}
+
+main .q5-bg {
+  top: 5950px;
+  left: 0;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 50%);
+          clip-path: polygon(0 0, 0 100%, 100% 50%);
+}
+
+main .q5-bg::after {
+  bottom: 0;
+  left: 0;
+  width: 36%;
+  height: 360px;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 50%);
+          clip-path: polygon(0 0, 0 100%, 100% 50%);
+}
+
+main .crv-bg {
+  top: 7000px;
+  right: -40%;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 50%);
+          clip-path: polygon(100% 0, 100% 100%, 0 50%);
+}
+
+main .lr-bg {
+  top: 8200px;
+  left: -60%;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
+          clip-path: polygon(0 0, 0% 100%, 100% 50%);
+}
+
+.brick__overlay {
+  background-color: #00F0FF;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100% 0;
+}
+
+.vw .brick__overlay {
+  background-image: url(../img/golf/bg.png);
+}
+
+.jazz .brick__overlay {
+  background-image: url(../img/jazz/bg.png);
+}
+
+.a3 .brick__overlay {
+  background-image: url(../img/a3/bg.png);
+  background-size: cover;
+}
+
+.p508 .brick__overlay {
+  background-image: url(../img/p508/bg.png);
+}
+
+.passat .brick__overlay {
+  background-image: url(../img/passat/bg.png);
+}
+
+.p3008 .brick__overlay {
+  background-image: url(../img/p3008/bg.png);
+}
+
+.c5 .brick__overlay {
+  background-image: url(../img/c5/bg.png);
+  background-size: cover;
+}
+
+.q5 .brick__overlay {
+  background-image: url(../img/q5/bg.png);
+  background-size: cover;
+}
+
+.crv .brick__overlay {
+  background-image: url(../img/crv/bg.png);
+  background-size: cover;
+}
+
+.ds .brick__overlay {
+  background-image: url(../img/ds/bg.png);
+  background-size: cover;
+}
+
+.lr .brick__overlay {
+  background-image: url(../img/lr/bg.png);
+  background-size: cover;
+}
+
+.footer__caption {
+  width: 790px;
+  margin: 0 auto 30px auto;
+  padding: 35px 70px;
+  border: 2px solid white;
+  -webkit-transform: skew(-20deg);
+      -ms-transform: skew(-20deg);
+          transform: skew(-20deg);
+  background-color: #365961;
+}
+
+.footer__caption p {
+  margin: 0;
+  -webkit-transform: skew(20deg);
+      -ms-transform: skew(20deg);
+          transform: skew(20deg);
+  font-size: 1.125rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer__note {
+  padding-bottom: 30px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+  text-align: center;
+}
+
+@media (min-width: 1280px) {
+  .hero {
+    width: 1280px;
+    background-size: contain;
+  }
+}

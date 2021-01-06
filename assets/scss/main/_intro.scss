@@ -1,0 +1,25 @@
+.intro {
+  width: 790px;
+  margin: 0 auto 60px auto;
+  padding-top: 75px;
+  position: relative;
+
+  p {
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-family: $font-main;
+    font-weight: 300;
+    font-size: 1.125rem;
+    line-height: 1.625;
+    color: #B9C0C4;
+
+    &:first-of-type {
+      color: $color-accent;
+      font-weight: 500;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

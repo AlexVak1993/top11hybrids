@@ -1,0 +1,179 @@
+//triangle background position
+main {
+  position: relative;
+  overflow: hidden;
+
+  .triangle-bg {
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+    background: $bg-gradient;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  .intro-bg {
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 100%);
+
+    &::after {
+      bottom: 0;
+      left: 0;
+      height: 500px;
+      width: 50%;
+      clip-path: polygon(0 0, 0% 100%, 100% 50%);
+    }
+  }
+
+  .jazz-bg {
+    top: 1150px;
+    left: -40%;
+    clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  }
+
+  .a3-bg {
+    top: 2050px;
+    right: 0;
+    clip-path: polygon(100% 0, 100% 100%, 0 50%);
+
+    &::after {
+      top: 0;
+      right: 0;
+      width: 36%;
+      height: 360px;
+      clip-path: polygon(100% 0, 100% 100%, 0 50%);
+    }
+  }
+
+  .passat-bg {
+    top: 3520px;
+    left: -40%;
+    clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  }
+
+  .p3008-bg {
+    top: 4200px;
+    right: -40%;
+    clip-path: polygon(100% 0, 100% 100%, 0 50%);
+  }
+
+  .c5-bg {
+    top: 5050px;
+    left: -60%;
+    clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  }
+
+  .q5-bg {
+    top: 5950px;
+    left: 0;
+    clip-path: polygon(0 0, 0 100%, 100% 50%);
+
+    &::after {
+      bottom: 0;
+      left: 0;
+      width: 36%;
+      height: 360px;
+      clip-path: polygon(0 0, 0 100%, 100% 50%);
+    }
+  }
+
+  .crv-bg {
+    top: 7000px;
+    right: -40%;
+    clip-path: polygon(100% 0, 100% 100%, 0 50%);
+  }
+
+  .lr-bg {
+    top: 8200px;
+    left: -60%;
+    clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  }
+}
+
+
+//cars background variable
+.brick {
+  &__overlay {
+    background-color: $color-accent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 0;
+  }
+}
+
+.vw {
+  .brick__overlay {
+    background-image: url(../img/golf/bg.png);
+  }
+}
+
+.jazz {
+  .brick__overlay {
+    background-image: url(../img/jazz/bg.png);
+  }
+}
+
+.a3 {
+  .brick__overlay {
+    background-image: url(../img/a3/bg.png);
+    background-size: cover;
+  }
+}
+
+.p508 {
+  .brick__overlay {
+    background-image: url(../img/p508/bg.png);
+  }
+}
+
+.passat {
+  .brick__overlay {
+    background-image: url(../img/passat/bg.png);
+  }
+}
+
+.p3008 {
+  .brick__overlay {
+    background-image: url(../img/p3008/bg.png);
+  }
+}
+
+.c5 {
+  .brick__overlay {
+    background-image: url(../img/c5/bg.png);
+    background-size: cover;
+  }
+}
+
+.q5 {
+  .brick__overlay {
+    background-image: url(../img/q5/bg.png);
+    background-size: cover;
+  }
+}
+
+.crv {
+  .brick__overlay {
+    background-image: url(../img/crv/bg.png);
+    background-size: cover;
+  }
+}
+
+.ds {
+  .brick__overlay {
+    background-image: url(../img/ds/bg.png);
+    background-size: cover;
+  }
+}
+
+.lr {
+  .brick__overlay {
+    background-image: url(../img/lr/bg.png);
+    background-size: cover;
+  }
+}

@@ -1,7 +1,8 @@
 //fonts variables
-// $font-main: "Roboto", sans-serif;
-// $font-title: "Baloo 2", cursive;
-$font-size: 15px;
+$font-main: 'Montserrat', sans-serif;
+$font-title: 'Anton', sans-serif;
+$font-accent: 'Orbitron', sans-serif;
+$font-size: 16px;
 
 //size-variables
 $mobile-sm: 320px;
@@ -15,14 +16,8 @@ $wide-screen-md: 1360px;
 $wide-screen-lg: 1599px;
 
 //color-variables
-// $color-green: #5dba3b;
-// $color-blue: #4e51bc;
-// $color-orange: #ff8b00;
-// $color-red: #ff5157;
-// $color-yellow: #ffc000;
-// $color-light-blue: #00b5c3;
-// $color-pink: #ff56af;
-// $color-gray: #d1d1d1;
-// $color-black: #000;
-// $color-text-accent: #fff;
-// $color-text-gray: #333;
+$color-accent: #00F0FF;
+$brick-gradient: linear-gradient(90.28deg, #00F0FF 13.6%, rgba(255, 255, 255, 0) 99.74%);
+$bg-gradient: linear-gradient(89.86deg, #041423 12.38%, #365961 90.38%);
+$text-primary: #4d4d4d;
+$text-secondary: #ffffff;

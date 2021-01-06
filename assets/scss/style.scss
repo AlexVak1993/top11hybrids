@@ -1,4 +1,11 @@
-@import "common";
-
 @import "variables";
 @import "media-mixins";
+
+@import "common";
+
+@import "hero";
+
+@import "main/intro";
+@import "main/brick";
+@import "main/background";
+@import "main/footer";

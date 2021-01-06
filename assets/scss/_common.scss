@@ -1,15 +1,50 @@
 body {
-  position: relative;
-  top: 0;
-  right: 0;
-  left: 0.5;
-
-  display: flex;
-  display: block;
-
-  text-align: center ;
-  text-align: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 
   background-color: #f1f1f1;
+  color: $text-primary;
+  font-size: $font-size;
+  font-family: $font-main;
 }
 
+main {
+  background: linear-gradient(
+      180deg,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0) 25%,
+      #ffffff 45.31%,
+      rgba(255, 255, 255, 0) 72.92%,
+      #ffffff 95.83%
+    ),
+    #c4c4c4;
+}
+
+img {
+  display: block;
+  width: auto;
+  min-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.main-cta {
+  padding: 15px 45px;
+  border: 2px solid white;
+  font-size: 0.8125rem;
+  font-family: $font-accent;
+  transform: skew(-20deg);
+  text-decoration: none;
+  background-color: #365961;
+  color: $text-secondary;
+
+  p {
+    margin: 0;
+    transform: skew(20deg);
+  }
+}
