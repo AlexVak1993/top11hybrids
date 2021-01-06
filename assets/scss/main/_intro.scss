@@ -1,8 +1,12 @@
 .intro {
-  width: 790px;
-  margin: 0 auto 60px auto;
+  margin: 0 20px 60px;
   padding-top: 75px;
   position: relative;
+
+  @include desktop-sm {
+    width: 790px;
+    margin: 0 auto 60px auto;
+  }
 
   p {
     margin-bottom: 20px;
@@ -11,7 +15,7 @@
     font-weight: 300;
     font-size: 1.125rem;
     line-height: 1.625;
-    color: #B9C0C4;
+    color: #b9c0c4;
 
     &:first-of-type {
       color: $color-accent;

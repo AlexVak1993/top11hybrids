@@ -1,10 +1,25 @@
 .brick {
   height: 660px;
-  padding: 50px 50px 0 50px;
-  margin-bottom: 80px;
+  padding: 30px 15px 0 15px;
+  margin-bottom: 780px;
   position: relative;
   display: flex;
   flex-wrap: wrap;
+
+  @include mobile-md {
+    margin-bottom: 980px;
+    padding: 30px 30px 0 30px;
+  }
+  @include mobile-lg {
+    margin-bottom: 1120px;
+    padding: 50px 50px 0 50px;
+  }
+  @include tablet {
+    margin-bottom: 250px;
+  }
+  @include desktop-sm {
+    margin-bottom: 80px;
+  }
 
   &__overlay {
     position: absolute;
@@ -17,13 +32,20 @@
   }
 
   &__description {
-    position: relative;
     margin-top: -10px;
-    margin-left: 10px;
+    margin-bottom: 30px;
+    flex: 0 0 100%;
     z-index: 2;
-    flex: 0 0 47%;
 
-    h1, h2 {
+    @include desktop-sm {
+      margin-left: 10px;
+      margin-bottom: 0;
+      position: relative;
+      flex: 0 0 47%;
+    }
+
+    h1,
+    h2 {
       font-family: $font-title;
       font-weight: 400;
       margin: 0;
@@ -41,23 +63,65 @@
 
     p {
       line-height: 1.25;
+      padding: 10px;
+      border: 2px solid white;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: $text-secondary;
+
+      @include desktop-sm {
+        border: none;
+        background-color: inherit;
+        color: inherit;
+      }
     }
 
     a {
-      position: absolute;
-      bottom: 15px;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      width: 50%;
+
+      @include desktop-sm {
+        position: absolute;
+        display: inline-block;
+        bottom: 15px;
+      }
+
+      p {
+        padding: 0;
+        border: none;
+        background-color: inherit;
+        color: inherit;
+      }
     }
   }
 
   &__stats {
-    margin-top: 15px;
-    margin-left: auto;
-    max-height: calc(240px - 60px);
+    margin: 15px auto 30px auto;
     z-index: 2;
-    flex: 0 0 calc(46% - 60px);
-    padding: 30px;
+    max-height: calc(240px - 30px);
+    flex: 0 0 calc(100% - 34px);
     border: 2px solid white;
     background-color: rgba(0, 0, 0, 0.7);
+
+    @include mobile-md {
+      flex: 0 0 calc(100% - 34px);
+      padding: 15px;
+    }
+    @include mobile-lg {
+      flex: 0 0 80%;
+    }
+    @include desktop-sm {
+      margin: 15px auto 0 auto;
+      flex: 0 0 calc(46% - 30px);
+      margin-left: auto;
+      margin-top: 15px;
+    }
+    @include wide-screen-sm {
+      max-height: calc(240px - 60px);
+      flex: 0 0 calc(46% - 60px);
+      padding: 30px;
+    }
 
     table {
       width: 100%;
@@ -65,10 +129,14 @@
       color: $text-secondary;
 
       tr {
-
         td {
           font-weight: 400;
           line-height: 2.5;
+          font-size: 0.75rem;
+
+          @include mobile-lg {
+            font-size: 1rem;
+          }
 
           &:first-of-type {
             font-family: $font-accent;
@@ -85,22 +153,53 @@
     z-index: 2;
     flex: 0 0 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+
+    @include tablet {
+      justify-content: space-between;
+      flex-direction: row;
+    }
+    @include desktop-sm {
+      justify-content: flex-start;
+    }
 
     .images__item {
-      margin-right: 30px;
+      width: 220px;
+      margin: 0 auto -65px;
+
+      @include mobile-md {
+        width: 290px;
+        margin: 0 auto -85px;
+      }
+      @include mobile-lg {
+        width: 350px;
+        margin: 0 auto -105px;
+      }
+      @include tablet {
+        width: auto;
+        margin: 0;
+      }
+      @include desktop-sm {
+        margin-right: 30px;
+      }
 
       &:nth-of-type(1) {
         clip-path: polygon(100% 25%, 100% 100%, 0 75%, 0 0);
       }
       &:nth-of-type(2) {
-        clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 25%);
+        clip-path: polygon(100% 25%, 100% 100%, 0 75%, 0 0);
+        @include tablet {
+          clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 25%);
+        }
       }
       &:nth-of-type(3) {
         clip-path: polygon(100% 25%, 100% 100%, 0 75%, 0 0);
       }
       &:nth-of-type(4) {
-        clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 25%);
+        clip-path: polygon(100% 25%, 100% 100%, 0 75%, 0 0);
+        @include tablet {
+          clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 25%);
+        }
       }
     }
   }

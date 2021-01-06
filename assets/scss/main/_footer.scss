@@ -1,20 +1,27 @@
 .footer {
   &__caption {
-    width: 790px;
     margin: 0 auto 30px auto;
-    padding: 35px 70px;
+    padding: 20px;
     border: 2px solid white;
-    transform: skew(-20deg);
     background-color: #365961;
+
+    @include desktop-sm {
+      width: 790px;
+      transform: skew(-20deg);
+      padding: 35px 70px;
+    }
 
     p {
       margin: 0;
-      transform: skew(20deg);
       font-size: 1.125rem;
       line-height: 1.5;
       font-weight: 500;
       color: $text-secondary;
       text-align: center;
+
+      @include desktop-sm {
+        transform: skew(20deg);
+      }
     }
   }
 
@@ -23,7 +30,11 @@
     font-size: 0.875rem;
     font-weight: 500;
     line-height: 1.5;
-    margin: 0;
     text-align: center;
+    margin: 0 20px;
+
+    @include desktop-sm {
+      margin: 0;
+    }
   }
 }

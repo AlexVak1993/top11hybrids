@@ -31,15 +31,23 @@ main {
   }
 
   .jazz-bg {
-    top: 1150px;
+    top: 1350px;
     left: -40%;
     clip-path: polygon(0 0, 0% 100%, 100% 50%);
+
+    @include tablet {
+      top: 1150px;
+    }
   }
 
   .a3-bg {
-    top: 2050px;
+    top: 3000px;
     right: 0;
     clip-path: polygon(100% 0, 100% 100%, 0 50%);
+
+    @include tablet {
+      top: 2050px;
+    }
 
     &::after {
       top: 0;
@@ -51,27 +59,43 @@ main {
   }
 
   .passat-bg {
-    top: 3520px;
+    top: 4520px;
     left: -40%;
     clip-path: polygon(0 0, 0% 100%, 100% 50%);
+
+    @include tablet {
+      top: 3520px;
+    }
   }
 
   .p3008-bg {
-    top: 4200px;
+    top: 6000px;
     right: -40%;
     clip-path: polygon(100% 0, 100% 100%, 0 50%);
+
+    @include tablet {
+      top: 4200px;
+    }
   }
 
   .c5-bg {
-    top: 5050px;
+    top: 7050px;
     left: -60%;
     clip-path: polygon(0 0, 0% 100%, 100% 50%);
+
+    @include tablet {
+      top: 5050px;
+    }
   }
 
   .q5-bg {
-    top: 5950px;
+    top: 8550px;
     left: 0;
     clip-path: polygon(0 0, 0 100%, 100% 50%);
+
+    @include tablet {
+      top: 5950px;
+    }
 
     &::after {
       bottom: 0;
@@ -83,18 +107,25 @@ main {
   }
 
   .crv-bg {
-    top: 7000px;
+    top: 10700px;
     right: -40%;
     clip-path: polygon(100% 0, 100% 100%, 0 50%);
+
+    @include tablet {
+      top: 7000px;
+    }
   }
 
   .lr-bg {
-    top: 8200px;
+    top: 12000px;
     left: -60%;
     clip-path: polygon(0 0, 0% 100%, 100% 50%);
+
+    @include tablet {
+      top: 8200px;
+    }
   }
 }
-
 
 //cars background variable
 .brick {

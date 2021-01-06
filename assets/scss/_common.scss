@@ -29,8 +29,11 @@ img {
 }
 
 .container {
-  width: 1040px;
   margin: 0 auto;
+
+  @include wide-screen-sm {
+    width: 1040px;
+  }
 }
 
 .main-cta {
